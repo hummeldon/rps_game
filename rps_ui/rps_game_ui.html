@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <div>
+      <button id="start">Start Game</button>
+      <button id="rock" style="display: none;">Rock</button>
+      <button id="paper" style="display: none;">Paper</button>
+      <button id="scissors" style="display: none;">Scissors</button>
+    </div>
+  </div>
+  <div class="scoreboard">
+    <div id="choices"></div>
+    <div>
+      <p>Computer Choice: <span id="com"></span></p>
+      <p>Player Choice: <span id="player"></span></p>
+    </div>
+    <h2>Scores</h2>
+    <div>
+      <p>Round: <span id="round">0</span>/5</p>
+      <p>Computer: <span id="com-score">0</span></p>
+      <p>Player: <span id="player-score">0</span></p>
+      <p id="winner"></p>
+    </div>
+  </div>
+  <script type="text/javascript" src="main_ui.js"></script>
+</body>
+</html>
