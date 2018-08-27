@@ -1,14 +1,111 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Acme");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
 }
 
-html, body{
-    height: 100%;
+header {
+	height: 150px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Acme";
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+body {
+	background-color: #394456;
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 3px;
+	width: 185px;
+	background-color: #486c89;
+	padding: 15px 20px;
+	margin: 15px 5px 15px 0px;
+	text-align: center;
+	font-size: 25px;
+}
+
+button:hover {
+	transition: 0.1s ease;
+	background-color: #5881a3;
 }
 
 .scoreboard {
-  background-color: orange;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.score-square {
+	border: 1px solid black;
+	padding: 20px;
+	margin: 10px;
+	width: 145px;
+	background-color: #486c89;
+	text-align: center;
+}
+
+.buttons {
+	max-width: 750px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.choices {
+	border: 1px solid black;
+	text-align: center;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+#outcome {
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px 0;
+}
+
+#final-result {
+	text-align: center;
+}
+
+#computer-choice,
+#player-choice {
+	background-color: #486c89;
+	padding: 7px 0;
+}
+
+#start {
+	background-color: #578457;
+}
+
+#start:hover {
+	transition: 0.1s ease;
+	background-color: #669b66;
 }

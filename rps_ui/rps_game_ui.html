@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
+<meta charset=utf-8>
+
 <head>
-  <title>Page Title</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Page Title</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div>
-    <div>
-      <button id="start">Start Game</button>
-      <button id="rock" style="display: none;">Rock</button>
-      <button id="paper" style="display: none;">Paper</button>
-      <button id="scissors" style="display: none;">Scissors</button>
-    </div>
-  </div>
-  <div class="scoreboard">
-    <div id="choices"></div>
-    <div>
-      <p>Computer Choice: <span id="com"></span></p>
-      <p>Player Choice: <span id="player"></span></p>
-    </div>
-    <h2>Scores</h2>
-    <div>
-      <p>Round: <span id="round">0</span>/5</p>
-      <p>Computer: <span id="com-score">0</span></p>
-      <p>Player: <span id="player-score">0</span></p>
-      <p id="winner"></p>
-    </div>
-  </div>
-  <script type="text/javascript" src="main_ui.js"></script>
+	<header>
+		<h1>rock paper scissors</h1>
+	</header>
+	<div class='buttons'>
+		<button id="start">Start Game</button>
+		<button id="rock" style="display: none;">✊</button>
+		<button id="paper" style="display: none;">✋</button>
+		<button id="scissors" style="display: none;">✌</button>
+	</div>
+	<div>
+		<h2>Scores</h2>
+	</div>
+	<div class="scoreboard">
+		<div class="score-square">
+			<p>Round: <span id="round">0</span> of 5</p>
+		</div>
+		<div class="score-square">
+			<p>Computer: <span id="com-score">0</span></p>
+		</div>
+		<div class="score-square">
+			<p>Player: <span id="player-score">0</span></p>
+		</div>
+	</div>
+
+	<div class="choices">
+		<p id="computer-choice">Computer Choice: <span id="com"></span></p>
+		<p id="player-choice">Player Choice: <span id="player"></span></p>
+	</div>
+	<h3 id="outcome"></h3>
+	<h3 id="final-result"></h3>
+	<script type="text/javascript" src="main_ui.js"></script>
 </body>
+
 </html>
